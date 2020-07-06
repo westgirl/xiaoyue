@@ -129,7 +129,6 @@ input[type=color], input[type=date], input[type=datetime-local], input[type=date
 }
 .nav-wrapper{
 	background: #f4f4f4;
-	
 }
 .nav-container{
 	height: 45px;
@@ -153,7 +152,6 @@ input[type=color], input[type=date], input[type=datetime-local], input[type=date
 	top: -1px;
 }
 .index-swiper .swiper-container{
-	
 	height: 470px;
 }
 .index-swiper .swiper-button-prev{
@@ -186,6 +184,34 @@ input[type=color], input[type=date], input[type=datetime-local], input[type=date
 .index-swiper .swiper-slide img{
 	width: 100%;
 	height: 470px;
+}
+/* @media screen and (max-width: 600px) {
+	
+} */
+@media screen and (max-width: 600px) {
+	.nav-container{
+		height: 45px;
+		line-height: 45px;
+		overflow: visible;
+	}
+	.index-swiper {
+		position: relative;
+		top: 0;
+	}
+	.index-swiper .swiper-container{
+		width: 100%;
+		height: 300px;
+	}
+	.index-swiper .swiper-slide img{
+		width: 100%;
+		height: 300px;
+	}
+	.swiper-button-next,.swiper-button-prev{
+		display: none;
+	}
+	.brand-title{
+		padding: 0 10px;
+	}
 }
 .brand-wrapper{
 	overflow: hidden;
@@ -252,6 +278,7 @@ input[type=color], input[type=date], input[type=datetime-local], input[type=date
 	float: left;
 	margin-right: 4px;
 }
+
 .hot-box img{
 	width: 100%;
 	height: 100%;
@@ -263,6 +290,22 @@ input[type=color], input[type=date], input[type=datetime-local], input[type=date
 .hot-item{
 	margin-bottom: 6px;
     overflow: hidden;
+}
+@media screen and (max-width: 600px) {
+	.brand-item{
+		display: inline-block;
+		width: 61px;
+		height: 40px;
+		margin-right: 7px;
+		margin-bottom: 6px;
+		background: #f7f7f7;
+	}
+	.brand-item img{
+		display: inline-block;
+		width: 61px;
+		height: 40px;
+		vertical-align: middle;
+	}
 }
 .ad{
 	margin-top: 30px;
