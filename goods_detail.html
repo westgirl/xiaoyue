@@ -9,6 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 		<script type="text/javascript" src="lib/jquery.min.js"></script>
 		<script type="text/javascript" src="lib/swiper.min.js"></script>
+		<script type="text/javascript" src="lib/jquery.SuperSlide.2.1.3.js"></script>
 	</head>
 	<body class="allbrands">
 		<div class="w1200 top-tips">
@@ -64,9 +65,53 @@
 			<span>首页 > 所有品牌 > 卡地亚 > 卡地亚系列</span>
 		</div>
 		<!--  -->
+		<style type="text/css">
+			   .slideBox{ 
+				   overflow:hidden; zoom:1; 
+				   /* padding:10px 0 10px 42px; */
+				   position:relative; 
+				    width: 60px;
+				     height: 470px;
+					 margin-left: 100px;
+					 padding-top: 30px;
+				 }
+			
+			   .sPrev,.sNext{ 
+				   position:absolute; 
+				   /* left:5px; top:10px; */
+				   display:block;
+					/* width:30px; height:94px; */
+					width: 60px;
+					height: 30px;
+					border:1px solid #ddd; 
+				    z-index: 10;
+				 }
+				 .sPrev{
+					 top: 0;
+				 }
+			   .sNext{ 
+				   left:auto; right:5px; 
+				   bottom: 0;
+			   }
+			   .sPrev:hover,.sNext:hover{ border-color:#f60;  }
+			   .slideBox ul{ overflow:hidden; zoom:1;   }
+			   .slideBox ul li{ margin:0 8px; 
+			         display:inline-block; overflow:hidden; text-align:center; 
+					 width: 90px;
+					 height: 90px;
+					 background: red;
+					 margin-bottom: 10px;
+				}
+			   .slideBox ul li .pic{ text-align:center; }
+			   .slideBox ul li .pic img{ 
+				   /* width:120px; height:90px; display:block;  padding:2px; border:1px solid #ccc; */
+			    }
+			   .slideBox ul li .pic a:hover img{ border-color:#999;  }
+			   .slideBox ul li .title{ line-height:24px;   }
+		</style>
 		<div class=" w1200">
 			<div class="des-swiper">
-				<div class="swiper-container">
+				<!-- <div class="swiper-container">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide"><img src="img/list1.png" ></div>
 						<div class="swiper-slide"><img src="img/list2.png" ></div>
@@ -75,15 +120,43 @@
 						<div class="swiper-slide"><img src="img/list2.png" ></div>
 						<div class="swiper-slide"><img src="img/list3.png" ></div>
 					</div>
-					<!-- 如果需要分页器 -->
-					<!-- <div class="swiper-pagination"></div> -->
-					
-					<!-- 如果需要导航按钮 -->
 					<div class="swiper-button-prev"></div>
 					<div class="swiper-button-next"></div>
+				</div> -->
+				<div class="">
+					<div class="slideBox">
+						<a class="sPrev" href="javascript:void(0)"></a>
+						<ul>
+							<li>
+								<!-- <div class="pic"><a  ><img src="img/list1.png" /></a></div> -->
+								<div class="title"><a  >效果图3.1</a></div>
+							</li>
+							<li>
+								<!-- <div class="pic"><a  ><img src="img/list1.png" /></a></div> -->
+								<div class="title"><a  >效果图3.2</a></div>
+							</li>
+							<li>
+								<!-- <div class="pic"><a  ><img src="img/list1.png" /></a></div> -->
+								<div class="title"><a  >效果图3.3</a></div>
+							</li>
+							<li>
+								<!-- <div class="pic"><a  ><img src="img/list1.png" /></a></div> -->
+								<div class="title"><a  >效果图3.4</a></div>
+							</li>
+						</ul>
+						<a class="sNext" href="javascript:void(0)"></a>
+					</div>
 				</div>
 			</div>
-			
+			<script type="text/javascript">
+				jQuery(".slideBox").slide({ 
+					mainCell:"ul",vis:4,prevCell:".sPrev",nextCell:".sNext",effect:"topLoop",
+					slide: function(event, ui) { 
+					       console.log(event, ui) 
+					      } 
+				});
+				
+			</script>
 			
 		</div>
 		

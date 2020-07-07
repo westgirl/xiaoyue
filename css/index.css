@@ -860,9 +860,9 @@ input[type=color], input[type=date], input[type=datetime-local], input[type=date
 }
 
 .des-swiper{
-	width: 90px;
+	/* width: 90px;
 	height: 490px;
-	overflow: hidden;
+	overflow: hidden; */
 }
 .des-swiper .swiper-slide{
 	height: 88px!important;
