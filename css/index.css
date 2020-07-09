@@ -1118,7 +1118,12 @@ input[type=color], input[type=date], input[type=datetime-local], input[type=date
 		max-width: 100%;
 		max-height: 300px;
 	}
-	
+	.des-goodsinfo{
+	    max-width: 100%;	
+		margin-left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+	}
 }
 a{
    color: initial;
