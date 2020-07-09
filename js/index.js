@@ -18,14 +18,16 @@ $(function(){
 			click:function(e){
 				console.log(this.clickedIndex);
 				$('.swiper-wrapper .swiper-slide').eq(this.clickedIndex).addClass('swiper-slide-active').siblings().removeClass('swiper-slide-active')
+				var src = $('.swiper-wrapper .swiper-slide').eq(this.clickedIndex).find('img').attr('src');
+				$(".big-img img").attr('src',src)
 			 },
 			 resize: function(){
 				  //窗口变化了
-				}
+			}
 		  }
 		});
 		$(".des-prev").click(function(){
-			let height = 0
+			var height = 0
 			if(swiper.slidesGrid.length % 4){
 				height = (swiper.slidesGrid.length % 4)*90
 			}else{
@@ -47,7 +49,7 @@ $(function(){
 			// mySwiper.slideTo(0, 1000, false)
 		})
 		$(".des-next").click(function(){
-			let height = 0
+			var height = 0
 			if(swiper.slidesGrid.length % 4){
 				height = (swiper.slidesGrid.length % 4)*90
 			}else{
