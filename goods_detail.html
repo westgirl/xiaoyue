@@ -10,14 +10,15 @@
 		<script type="text/javascript" src="lib/jquery.min.js"></script>
 		<script type="text/javascript" src="lib/swiper.min.js"></script>
 		<script type="text/javascript" src="lib/jquery.SuperSlide.2.1.3.js"></script>
+		<script type="text/javascript" src="js/base.js"></script>
 	</head>
-	<body class="allbrands">
+	<body class="goods-body">
 		<div class="w1200 top-tips">
 			超600多视频解析供鉴赏！添加客服【小岳说表】新微信号：xiaoyue77com
 		</div>
 		<!-- header -->
 		<div class="w1200 header">
-			<div class="logo-box mui-inline fl"><img src="img/toplogo.png" ></div>
+			<a href="index.html" class="logo-box mui-inline fl"><img src="img/toplogo.png" ></a>
 			<div class="search-box mui-inline">
 				<div class="mui-inline search-inner">
 					<input type="text" name="" id="" class="mui-inline w-auto search-input" value="" placeholder="输入搜索关键词" />
@@ -44,19 +45,19 @@
 		<!-- nav -->
 		<div class="nav-wrapper">
 			<div class="nav-container w1200">
-				<div class="nav-item active">首页</div>
-				<div class="nav-item">所有品牌</div>
-				<div class="nav-item">卡地亚</div>
-				<div class="nav-item">欧米茄</div>
-				<div class="nav-item">万国</div>
-				<div class="nav-item">劳力士</div>
-				<div class="nav-item">沛纳海</div>
-				<div class="nav-item">爱彼</div>
-				<div class="nav-item">真力时</div>
-				<div class="nav-item">百达翡丽</div>
-				<div class="nav-item">浪琴</div>
-				<div class="nav-item">百年灵</div>
-				<div class="nav-item">宝珀</div>
+				<a href="index.html" class="nav-item active">首页</a>
+				<a href="all_brands.html" class="nav-item">所有品牌</a>
+				<a href="brands.html" class="nav-item">卡地亚</a>
+				<a href="brands.html" class="nav-item">欧米茄</a>
+				<a href="brands.html" class="nav-item">万国</a>
+				<a href="brands.html" class="nav-item">劳力士</a>
+				<a href="brands.html" class="nav-item">沛纳海</a>
+				<a href="brands.html" class="nav-item">爱彼</a>
+				<a href="brands.html" class="nav-item">真力时</a>
+				<a href="brands.html" class="nav-item">百达翡丽</a>
+				<a href="brands.html" class="nav-item">浪琴</a>
+				<a href="brands.html" class="nav-item">百年灵</a>
+				<a href="brands.html" class="nav-item">宝珀</a>
 			</div>
 		</div>
 		<!-- 面包屑 -->
@@ -65,99 +66,366 @@
 			<span>首页 > 所有品牌 > 卡地亚 > 卡地亚系列</span>
 		</div>
 		<!--  -->
-		<style type="text/css">
-			   .slideBox{ 
-				   overflow:hidden; zoom:1; 
-				   /* padding:10px 0 10px 42px; */
-				   position:relative; 
-				    width: 60px;
-				     height: 470px;
-					 margin-left: 100px;
-					 padding-top: 30px;
-				 }
-			
-			   .sPrev,.sNext{ 
-				   position:absolute; 
-				   /* left:5px; top:10px; */
-				   display:block;
-					/* width:30px; height:94px; */
-					width: 60px;
-					height: 30px;
-					border:1px solid #ddd; 
-				    z-index: 10;
-				 }
-				 .sPrev{
-					 top: 0;
-				 }
-			   .sNext{ 
-				   left:auto; right:5px; 
-				   bottom: 0;
-			   }
-			   .sPrev:hover,.sNext:hover{ border-color:#f60;  }
-			   .slideBox ul{ overflow:hidden; zoom:1;   }
-			   .slideBox ul li{ margin:0 8px; 
-			         display:inline-block; overflow:hidden; text-align:center; 
-					 width: 90px;
-					 height: 90px;
-					 background: red;
-					 margin-bottom: 10px;
-				}
-			   .slideBox ul li .pic{ text-align:center; }
-			   .slideBox ul li .pic img{ 
-				   /* width:120px; height:90px; display:block;  padding:2px; border:1px solid #ccc; */
-			    }
-			   .slideBox ul li .pic a:hover img{ border-color:#999;  }
-			   .slideBox ul li .title{ line-height:24px;   }
-		</style>
 		<div class=" w1200">
-			<div class="des-swiper">
-				<!-- <div class="swiper-container">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide"><img src="img/list1.png" ></div>
-						<div class="swiper-slide"><img src="img/list2.png" ></div>
-						<div class="swiper-slide"><img src="img/list3.png" ></div>
-						<div class="swiper-slide"><img src="img/list1.png" ></div>
-						<div class="swiper-slide"><img src="img/list2.png" ></div>
-						<div class="swiper-slide"><img src="img/list3.png" ></div>
+			<div class="des-wrapper">
+				<!-- 手机端轮播start -->
+				<div class="detail-mobile_swiper">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="img/banner01.png" ></div>
+							<div class="swiper-slide"><img src="img/banner01.png" ></div>
+							<div class="swiper-slide"><img src="img/banner01.png" ></div>
+						</div>
+						<div class="swiper-pagination"></div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
 					</div>
-					<div class="swiper-button-prev"></div>
-					<div class="swiper-button-next"></div>
-				</div> -->
-				<div class="">
-					<div class="slideBox">
-						<a class="sPrev" href="javascript:void(0)"></a>
-						<ul>
-							<li>
-								<!-- <div class="pic"><a  ><img src="img/list1.png" /></a></div> -->
-								<div class="title"><a  >效果图3.1</a></div>
-							</li>
-							<li>
-								<!-- <div class="pic"><a  ><img src="img/list1.png" /></a></div> -->
-								<div class="title"><a  >效果图3.2</a></div>
-							</li>
-							<li>
-								<!-- <div class="pic"><a  ><img src="img/list1.png" /></a></div> -->
-								<div class="title"><a  >效果图3.3</a></div>
-							</li>
-							<li>
-								<!-- <div class="pic"><a  ><img src="img/list1.png" /></a></div> -->
-								<div class="title"><a  >效果图3.4</a></div>
-							</li>
-						</ul>
-						<a class="sNext" href="javascript:void(0)"></a>
+				</div>
+				<!-- 手机端轮播end -->
+				
+				<div class="swiper-button-prev des-prev"></div>
+				<div class="swiper-button-next des-next"></div>
+				<div class="des-swiper">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="img/list1.png" ></div>
+							<div class="swiper-slide"><img src="img/list2.png" ></div>
+							<div class="swiper-slide"><img src="img/list3.png" ></div>
+							<div class="swiper-slide"><img src="img/list1.png" ></div>
+							<div class="swiper-slide"><img src="img/list2.png" ></div>
+							<div class="swiper-slide"><img src="img/list3.png" ></div>
+							<div class="swiper-slide"><img src="img/list1.png" ></div>
+							<div class="swiper-slide"><img src="img/list3.png" ></div>
+						</div>
+					</div>
+				</div>
+				<div class="big-img">
+					<img src="img/list1.png" >
+				</div>
+				<div class="des-goodsinfo">
+					<div class="goods-title">卡地亚山度士系列WSSA0009男女情侣腕表</div>
+					<div class="goods-num">编号：K165</div>
+					<div class="goods-price">价格： 
+					      <span class="m">￥</span>  
+					      <span>3100</span>  
+						  <span>-</span>
+					      <span class="m">￥</span>  
+					      <span>3600</span>  
+					</div>
+					<div class="goods-brand">品牌: 卡地亚</div>
+					<div class="goods-ks">款式: 男款</div>
+					<div class="goods-zj">直径: 直径47.5X39.8 厚度9.08mm</div>
+					<div class="goods-jx">机芯: 采用Top级9015机芯，力保腕表的稳定性</div>
+					<div class="goods-qrcode">
+						<img src="img/qrcode.png" >
+						<div class="mui-inline qr-txt">
+							<div>扫描二维码,加小岳微信</div>
+							<div>即可寻得客服本人</div>
+						</div>
+						
+					</div>
+				</div>
+				
+				<!-- 手机端显示 -->
+				<div class="mobile-wrapper">
+					<img src="img/list1.png" >
+					<img src="img/list2.png" >
+				</div>
+				
+			</div>
+			
+			
+		</div>
+		<!-- 导航 -->
+		<div class="goods-nav-wrapper">
+			<div class="w1200 ">
+				<div class="goods-nav-box active">产品详情</div>
+				<div class="goods-nav-box">测评视频</div>
+				<div class="goods-nav-box">购前必读</div>
+				<div class="goods-nav-box">使用注意事项</div>
+				<div class="goods-nav-box">售后服务</div>
+			</div>
+			<div class="w1200 ">
+				<!-- 产品详情 -->
+				<div class="goods-content active">
+					<div class="con-title">卡地亚山度士系列WSSA0009男女情侣腕表</div>
+					<div class="con-txt">
+						018HBBv6最新力作，最新款SANTOS桑托斯系列！
+						山度士WSSA0009真正正品开模，全方位完美一比一的超级版本，同步正品！
+						1-316L精钢顶级打磨，壳套弧度及倒角均无可挑剔，剑形蓝刚指针及轨道式表盘，蓝色尖晶石皆与正品一致
+						2-采用Top级9015机芯，力保腕表的稳定性
+						3- 新增了人体工学表带／表链系统，令佩戴者可随心替换小牛皮或是鳄鱼皮材质的表带及表链。佩戴者只需轻轻按压表带／表链后方，即可启动替换系统，非常便利。
+						此外，拥有“SmartLink”技术的表链可以在不使用任何工具的情况下进行链节的更换，可以徒手就把链节卸下来，非常便利。
+						V6出品，必属精品！
+
+						V6最新山度士情侣腕表
+						同步专柜最新款完美克隆～
+						尺寸约女34MM男约39mm
+						采用进口加强型9015自动超薄机芯
+						表壳纤薄 拉丝倒角均毫无瑕疵
+						进口牛皮材质同步原装 新款喷砂折叠扣
+						表带一键拆卸全新设计
+					</div>
+					<div class="con-pic">
+						<div class="con-pic-title">图片展示</div>
+						<img src="img/despic.png" >
+					</div>
+				</div>
+				<!-- 测评视频 -->
+				<div class="goods-content">
+					<div class="video-box">
+						<div class="video-title"> 卡地亚山度士系列WSSA0009男女情侣腕表 </div>
+						<video width="850" height="570"  
+						poster="https://pic.rmb.bdstatic.com/7206ee21a7159425741e5f67bfdbc545.jpeg@s_2,w_454,h_256,q_100"
+						webkit-playsinline playsinline x5-playsinline controls preload="auto" >
+						   <source src="https://vdept.bdstatic.com/5947375031584c49746d64456847356c/627461565963596e/906f92b53eb8d111e1f9f7af2443a80f24c42c1957d761c0d95389715141bbc93aef776ee849aafd11be8f2e1465e1515b290bcc2e0803cabbb4e888143fa019.mp4?auth_key=1594202916-0-0-877970ab85cbc3df801dfaeaa34311f8"
+							type="video/mp4;">
+						</video>
+					</div>
+					
+				</div>
+				<!-- 购前必读 -->
+				<div class="goods-content">
+					<div class="sell-before">
+						<div class="sell-title">复刻手表常见问题解答</div>
+						<p>之前蜗牛掌柜发布过一些关于复刻表整体的一些概括解密，但也确因篇幅过长精力有限会有疏漏，还是留给大家很多问号，当然我们都在不断进步，完善，那蜗牛掌柜就
+大家经常询问的一些问题以问答的形式给大家做一下解释：</p>
+						<p><a class="slink" href="">点击查看如何判断一个卖家是靠谱的>></a></p>
+						<p>1.复刻表都是瑞士机芯吗？</p>
+						<p>不是、可能很多刚接触的表友会一味的在问是不是瑞士机芯，而又有很多网络卖家标榜自己的手表全部都是所谓瑞机。
+							从业多年的蜗牛掌柜负责任的告诉各位：复刻行业里大部分手表都是采用国产机芯，而近年日本miyota（西铁城）机芯也占有了一定份额，
+							因其物美价廉。而国产机芯里也分三六九等能，
+							一般普通仿表用的都是低端的国机（低价海鸥，上海，南宁，明珠，杭州等），
+							而中高端的仿表都是用差不多的仿瑞机（如2824，2836，7750，7751，2892，等型号）和日本Miyota（8215，82s7，9015等型号）。
+							其实中高端仿表所用的机芯很多人会称之为“瑞机”，当然也有人把廉价国机一样叫称“瑞机”，
+							而中高端手表所用的机芯价格较普通国机高很多也稳定很多，有很好的性价比，N厂等一众大厂的顶级货正也是用的此类机芯，
+							而仿瑞机三针的基本都可以升级为原装瑞机ETA,但价格较贵，试想一枚普通ETA的机芯成本已经过千，
+							那些叫嚣说自己是瑞机的卖家在卖几百或一千多的怎么可能是真正瑞士机芯，难道他做生意要亏钱吗？
+							对于很多大家见到的譬如劳力士3135，沛纳海P9000，欧米茄8500，AP3120,格拉苏蒂原装，百达CAL324，
+							积家原装机等外观极似原装的机芯也均为国产仿瑞机及miyota复刻的，并非真正的原厂机芯（原厂机芯动辄上万或数万而且只供自己品牌使用不外供），
+							但这类机芯也确实极大程度提升了整表的还原度，也算是复刻行业里一个飞跃。另外还有一些列真陀飞轮，虽全为国产但工艺复杂值得把玩。
+							（正品瑞士陀飞轮均数十万起根本不存在瑞士进口陀飞轮放在仿表上卖几千块的事情）至于假飞轮（实则为摆轮，结构根本不一样，
+							以图为证-文章附图列举了大量复刻市场常用机芯加以注释帮各位解谜）
+						</p>
+						<div class="relate">
+						   <div class="relate-title">related Reading:</div>
+						   <ul>
+							  <li> <a href="">售前必读</a> </li>
+							  <li><a href="">出货质检</a></li>
+							  <li><a href="">代理合作原则</a></li>
+						   </ul>
+						</div>
+					</div>
+				</div>
+				<!-- 使用注意事项 -->
+				<div class="goods-content tips-box">
+					<div class="sell-title">复刻手表常见问题解答</div>
+					<div>
+						<p>鉴于部分客户，对腕表使用不太了解，以下整理的一些机械表的使用注意事项希望能够帮到您：</p>
+                         <p>总结过去七年多返修案例来看，容易出故障点的操作集中在于：</p>
+                         <p>1，生活防水的表，用水龙头冲洗或者泡澡等  <a class="slink" href="">点击查看防水常识>></a>   </p>
+                         <p>2，不恰当的时间直接调节日历</p>
+                         <p>3，把计时功能的秒针当做我们正常的60秒秒针操作，不恰单的计时功能使用顺序</p>
+                         <p>4，有部分客户把头滑牙，因把头齿牙比较细小，请各位表有操作时候略微温柔，特别旋入式把头不能直接暴力插拔</p>
+                         <p>以上这些操作，可能有的朋友操作十次都没事，而有的朋友操作一次，就能让机芯次轮错位。</p>
+                         <p>为了避免错误的操作，所以请大家耐心的看完以下注意点：</p>
+                         <p>一、三针机械腕表+日历</p>
+                         <p>1、新表到货后，不论哪种机芯，都先上发条30圈左右，一般是把头直接往上旋转（顺时针），</p>
+						 <div class="video-box">
+							 <video width="680" height="510"  
+							 poster="https://pic.rmb.bdstatic.com/7206ee21a7159425741e5f67bfdbc545.jpeg@s_2,w_454,h_256,q_100"
+							 webkit-playsinline playsinline x5-playsinline controls preload="auto" >
+							    <source src="https://vdept.bdstatic.com/5947375031584c49746d64456847356c/627461565963596e/906f92b53eb8d111e1f9f7af2443a80f24c42c1957d761c0d95389715141bbc93aef776ee849aafd11be8f2e1465e1515b290bcc2e0803cabbb4e888143fa019.mp4?auth_key=1594202916-0-0-877970ab85cbc3df801dfaeaa34311f8"
+							 	type="video/mp4;">
+							 </video>
+						 </div>
+					</div>
+					<div class="relate">
+					   <div class="relate-title">related Reading:</div>
+					   <ul>
+						  <li> <a href="">售前必读</a> </li>
+						  <li><a href="">出货质检</a></li>
+						  <li><a href="">代理合作原则</a></li>
+					   </ul>
+					</div>
+					
+				</div>
+				<!-- 售后服务 -->
+				<div class="goods-content tips-box">
+					<div class="sell-title">售后维修细则</div>
+					<div>
+						<p>名表007能够在动荡的互联网中存活、在于我们一直坚持：诚信经营、服务第一的经营理念。</p>
+					     <p>卖的不仅仅是商品、更是售后服务！！！</p>
+					     <p>运营至今将近7年多，服务万千表友。 我们也会将继续服务更多有需要的表友。 </p>
+					     <p>收货注意事项：</p>
+					     <p>感谢您的信任选择了我 您购买的手表我们会尽快给您检测无误后发出，请您耐心等候！</p>
+					     <p>您收到手表后，先不要着急拆膜佩戴，请按照下面的程序检验，确认无误后在拆膜佩戴。</p>
+					     <p>首先:先检查手表外观是否完好无损，表盘里有无灰尘瑕疵等。</p>
+					     <p>其次:调整好时间，观察手表24小时的误差。如果是机械表，要先手动上满弦。 石英表误差24小时为0。机械表24小时误差10秒左右都是正常的。</p>
+					     <p>以上检验后没有问题，确认要这块表后，才能拆表带膜，截表带，再正常佩戴使用。</p>
+					     <p>注意:所有工厂供货商的退换要求，就是钢表带保护膜不能拆，皮表带不能有佩戴痕迹，表壳不能有磨损。 否则工厂不接受退换服务，只能保修。</p>
+					</div>
+					<div class="relate">
+					   <div class="relate-title">related Reading:</div>
+					   <ul>
+						  <li> <a href="">售前必读</a> </li>
+						  <li><a href="">出货质检</a></li>
+						  <li><a href="">代理合作原则</a></li>
+					   </ul>
 					</div>
 				</div>
 			</div>
-			<script type="text/javascript">
-				jQuery(".slideBox").slide({ 
-					mainCell:"ul",vis:4,prevCell:".sPrev",nextCell:".sNext",effect:"topLoop",
-					slide: function(event, ui) { 
-					       console.log(event, ui) 
-					      } 
-				});
-				
-			</script>
-			
+		</div>
+		
+		<!-- 品牌 -->
+		<div class="brand-wrapper w1200">
+			<div class="blank"></div>
+			<div class="brand-title">
+				品牌导航
+			</div>
+			<div class="brand-list">
+				<a href="brands.html" class="brand-item">
+					<img src="img/nav01.png" >
+				</a>
+				<a href="brands.html" class="brand-item">
+					<img src="img/nav02.png" >
+				</a>
+				<a href="brands.html" class="brand-item">
+					<img src="img/nav03.png" >
+				</a>
+				<a href="brands.html" class="brand-item">
+					<img src="img/nav04.png" >
+				</a>
+				<a href="brands.html" class="brand-item">
+					<img src="img/nav05.png" >
+				</a>
+				<a href="brands.html" class="brand-item">
+					<img src="img/nav06.png" >
+				</a>
+				<a href="brands.html" class="brand-item">
+					<img src="img/nav07.png" >
+				</a>
+				<a href="brands.html" class="brand-item">
+					<img src="img/nav01.png" >
+				</a>
+				<a href="brands.html" class="brand-item">
+					<img src="img/nav02.png" >
+				</a>
+				<a href="brands.html" class="brand-item">
+					<img src="img/nav03.png" >
+				</a>
+				<a href="brands.html" class="brand-item">
+					<img src="img/nav04.png" >
+				</a>
+				<a href="brands.html" class="brand-item">
+					<img src="img/nav05.png" >
+				</a>
+				<a href="brands.html" class="brand-item">
+					<img src="img/nav06.png" >
+				</a>
+				<a href="brands.html" class="brand-item">
+					<img src="img/nav07.png" >
+				</a>
+			</div>
+		</div>
+		
+		<!-- 同品牌产品 -->
+		<div class="brand-wrapper w1200">
+			<div class="blank"></div>
+			<div class="brand-title">
+				同品牌产品
+			</div>
+			<div class="qua-list">
+				<a href="goods_detail.html" class="que-item">
+					<img src="img/list1.png" >
+					<p class="m">￥ <span>130000</span></p>
+					<p class="des">casio旗舰店AQ-S810运动防水潮流电子小黑表男手表</p>
+				</a>
+				<a href="goods_detail.html" class="que-item">
+					<img src="img/list2.png" >
+					<p class="m">￥ <span>130000</span></p>
+					<p class="des">casio旗舰店AQ-S810运动防水潮流电子小黑表男手表</p>
+				</a>
+				<a href="goods_detail.html" class="que-item">
+					<img src="img/list3.png" >
+					<p class="m">￥ <span>130000</span></p>
+					<p class="des">casio旗舰店AQ-S810运动防水潮流电子小黑表男手表</p>
+				</a>
+				<a href="goods_detail.html" class="que-item">
+					<img src="img/list4.png" >
+					<p class="m">￥ <span>130000</span></p>
+					<p class="des">casio旗舰店AQ-S810运动防水潮流电子小黑表男手表</p>
+				</a>
+				<a href="goods_detail.html" class="que-item">
+					<img src="img/list1.png" >
+					<p class="m">￥ <span>130000</span></p>
+					<p class="des">casio旗舰店AQ-S810运动防水潮流电子小黑表男手表</p>
+				</a>
+				<a href="goods_detail.html" class="que-item">
+					<img src="img/list2.png" >
+					<p class="m">￥ <span>130000</span></p>
+					<p class="des">casio旗舰店AQ-S810运动防水潮流电子小黑表男手表</p>
+				</a>
+				<a href="goods_detail.html" class="que-item">
+					<img src="img/list3.png" >
+					<p class="m">￥ <span>130000</span></p>
+					<p class="des">casio旗舰店AQ-S810运动防水潮流电子小黑表男手表</p>
+				</a>
+				<a href="goods_detail.html" class="que-item">
+					<img src="img/list4.png" >
+					<p class="m">￥ <span>130000</span></p>
+					<p class="des">casio旗舰店AQ-S810运动防水潮流电子小黑表男手表</p>
+				</a>
+			</div>
+		</div>
+		<!-- 最新上架产品 -->
+		<div class="brand-wrapper w1200">
+			<div class="blank"></div>
+			<div class="brand-title">
+				最新上架产品
+			</div>
+			<div class="qua-list">
+				<a href="goods_detail.html" class="que-item">
+					<img src="img/list1.png" >
+					<p class="m">￥ <span>130000</span></p>
+					<p class="des">casio旗舰店AQ-S810运动防水潮流电子小黑表男手表</p>
+				</a>
+				<a href="goods_detail.html" class="que-item">
+					<img src="img/list2.png" >
+					<p class="m">￥ <span>130000</span></p>
+					<p class="des">casio旗舰店AQ-S810运动防水潮流电子小黑表男手表</p>
+				</a>
+				<a href="goods_detail.html" class="que-item">
+					<img src="img/list3.png" >
+					<p class="m">￥ <span>130000</span></p>
+					<p class="des">casio旗舰店AQ-S810运动防水潮流电子小黑表男手表</p>
+				</a>
+				<a href="goods_detail.html" class="que-item">
+					<img src="img/list4.png" >
+					<p class="m">￥ <span>130000</span></p>
+					<p class="des">casio旗舰店AQ-S810运动防水潮流电子小黑表男手表</p>
+				</a>
+				<a href="goods_detail.html" class="que-item">
+					<img src="img/list1.png" >
+					<p class="m">￥ <span>130000</span></p>
+					<p class="des">casio旗舰店AQ-S810运动防水潮流电子小黑表男手表</p>
+				</a>
+				<a href="goods_detail.html" class="que-item">
+					<img src="img/list2.png" >
+					<p class="m">￥ <span>130000</span></p>
+					<p class="des">casio旗舰店AQ-S810运动防水潮流电子小黑表男手表</p>
+				</a>
+				<a href="goods_detail.html" class="que-item">
+					<img src="img/list3.png" >
+					<p class="m">￥ <span>130000</span></p>
+					<p class="des">casio旗舰店AQ-S810运动防水潮流电子小黑表男手表</p>
+				</a>
+				<a href="goods_detail.html" class="que-item">
+					<img src="img/list4.png" >
+					<p class="m">￥ <span>130000</span></p>
+					<p class="des">casio旗舰店AQ-S810运动防水潮流电子小黑表男手表</p>
+				</a>
+			</div>
 		</div>
 		
 		<!-- blogo -->
@@ -218,15 +486,15 @@
 					<img src="img/b01.png" >
 					<div>联系客服</div>
 					<a >代理合作原则</a>
-					<a >联系客服</a>
-					<a >联系我们</a>
+					<a href="callus.html">联系客服</a>
+					<a href="callus.html">联系我们</a>
 				</div>
 				<div class="footer-item">
 					<img src="img/b02.png" >
 					<div>配送与支付</div>
 					<a >支付方式</a>
 					<a >出货质检</a>
-					<a >查看所有品牌</a>
+					<a href="all_brands.html">查看所有品牌</a>
 				</div>
 				<div class="footer-item">
 					<img src="img/b03.png" >
@@ -251,21 +519,7 @@
 				Contact US  |  网站地图
 			</div>
 		</div>
-		<script type="text/javascript">
-				
-			var swiper = new Swiper('.des-swiper .swiper-container', {
-				direction : 'vertical',
-				// autoplay: true,
-			  slidesPerView: 4,
-			  spaceBetween: 10,
-			  // loop: true,
-			  navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev',
-			  },
-			});
-		  	
-		</script>
+		<script type="text/javascript" src="js/index.js"></script>
 		
 	</body>
 </html>
